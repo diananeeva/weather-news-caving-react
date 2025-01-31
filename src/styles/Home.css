@@ -1,0 +1,85 @@
+/* Стилове за home-container */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h1 {
+  font-size: 3em;
+  color: #ffe699;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  margin-top: 90px;
+}
+
+/* Стилове за wisdom-section */
+.wisdom-section {
+  margin-top: 80px;
+}
+
+.wisdom-section ul {
+  list-style: none; /* Премахване на маркерите за списък */
+  padding: 0; /* Премахване на вътрешното разстояние на списъка */
+}
+
+.wisdom-section ul li {
+  font-size: 1.5em; /* Голям шрифт */
+  font-weight: bold;
+  font-style: italic; /* Курсив */
+  color: #ffffff; /* Ярко бял текст за контраст */
+  padding: 20px; /* Пространство около текста */
+  margin: 20px auto; /* Отстояние между елементите */
+  max-width: 800px; /* Ограничена ширина */
+  background-color: rgba(0, 0, 0, 0.5); /* Тъмен прозрачен фон зад текста */
+  border-left: 5px solid #ff4500; /* Оранжева лента отляво */
+  border-radius: 8px; /* Заоблени краища */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Сянка за дълбочина */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Леко сияние за четливост */
+}
+
+/* Медиен запитвания за респонсивност */
+@media (max-width: 1024px) {
+  .home-container h1 {
+    font-size: 2.5em; /* Намалена големина на заглавието за таблети */
+    margin-top: 60px; /* Намалено разстояние отгоре */
+  }
+
+  .wisdom-section ul li {
+    font-size: 1.3em; /* Намалена големина на шрифта в списъка за таблети */
+    padding: 15px; /* Намалено пространство около текста */
+    margin: 15px auto; /* Намалено разстояние между елементите */
+    max-width: 700px; /* Ограничава ширината на елементите */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2em; /* Намалена големина на заглавието за мобилни устройства */
+    margin-top: 40px; /* Намалено разстояние отгоре */
+  }
+
+  .wisdom-section ul li {
+    font-size: 1.2em; /* Намалена големина на шрифта за мобилни устройства */
+    padding: 10px; /* Намалено пространство около текста */
+    margin: 10px auto; /* Намалено разстояние между елементите */
+    max-width: 90%; /* Намалена ширина на елементите */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container h1 {
+    font-size: 1.5em; /* Още по-малка големина на заглавието за много малки екрани */
+    margin-top: 20px; /* Още по-малко разстояние отгоре */
+  }
+
+  .wisdom-section ul li {
+    font-size: 1em; /* Още по-малка големина на шрифта */
+    padding: 8px; /* Още по-малко пространство около текста */
+    margin: 8px auto; /* Намалено разстояние между елементите */
+    max-width: 100%; 
+  }
+}
+
+  
+ 
+ 

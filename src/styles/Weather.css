@@ -1,0 +1,137 @@
+/* Основен стил за weather app */
+.weather-app {
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50px;
+  top: 150px;
+}
+
+/* Заглавие на weather app */
+.weather-app h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #ffe699;
+  text-shadow: 2px 2px 4px #000;
+  margin-top: 20px;  /* Добавяне на отстояние отгоре */
+  margin-bottom: 20px; 
+}
+
+
+
+.visually-hidden {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Стилове за input полето */
+input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #e9f4ff;
+}
+
+
+/* Стил за бутон */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #007bff;
+  color: rgb(240, 241, 241);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover ефект за бутон */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Стил за информацията за времето */
+.weather-info {
+  margin-top: 20px;
+}
+
+/* Стил за грешки */
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+/* Респонсивен стил */
+@media (max-width: 1024px) {
+  .weather-app {
+    width: 90%; /* Увеличаваме ширината, за да заема повече пространство на по-малки екрани */
+    left: 5%;
+    top: 100px; /* Намаляваме отстоянието отгоре */
+  }
+
+  .weather-app h1 {
+    font-size: 16px; /* Намаляваме размера на заглавието за таблети */
+  }
+
+  input {
+    font-size: 14px; /* Намаляване на размера на шрифта за input полето */
+  }
+
+  button {
+    font-size: 12px; /* Увеличаваме размера на текста на бутона */
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-app {
+    width: 80%; /* Още повече разширяваме ширината на мобилни устройства */
+    left: 10%;
+    top: 50px; /* Намаляваме разстоянието отгоре */
+  }
+
+  .weather-app h1 {
+    font-size: 14px; /* Намаляваме още размера на заглавието */
+  }
+
+  input {
+    font-size: 14px; /* Малък шрифт за input полето */
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px; /* Още по-голям шрифт за бутона */
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-app {
+    width: 100%; /* Заемаме цялото пространство на екраните на мобилни устройства */
+    left: 0;
+    top: 20px; /* Малко разстояние отгоре */
+  }
+
+  .weather-app h1 {
+    font-size: 12px; /* Намаляваме размера на заглавието за мобилни устройства */
+  }
+
+  input {
+    font-size: 12px; /* Още по-малък шрифт за input полето */
+    padding: 5px;
+  }
+
+  button {
+    font-size: 12px; /* Намаляваме размера на текста на бутона */
+    padding: 10px 20px; /* Още по-малки размери за бутона */
+  }
+}

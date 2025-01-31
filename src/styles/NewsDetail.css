@@ -1,0 +1,183 @@
+/* Основен стил */
+.news-detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+/* Стил за новини */
+.news-text {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 65%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-text h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.news-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #181717;
+  text-align: justify;
+}
+
+/* Стил за регистрационни форми */
+.registration-form {
+  flex: 1;
+  max-width: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: rgb(129 124 124 / 20%);
+}
+
+.form-group textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #dab033;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e6c200;
+}
+
+/* За новини без съдържание */
+.news-detail-container h1.no-news {
+  text-align: center;
+  color: #e74c3c;
+}
+/* Центриране на новината с id 2 */
+.news-detail-wrapper.news-detail-2 {
+  display: flex;
+  flex-direction: column; /* Разположение на елементите вертикално */
+  justify-content: center; /* Центриране по вертикала */
+  align-items: center; /* Центриране по хоризонтала */
+ 
+}
+
+.news-detail-wrapper.news-detail-2 .news-text {
+  max-width: 80%; /* Ограничаване на ширината на новината */
+  text-align: center; /* Центриране на текста вътре в новината */
+}
+
+.news-detail-wrapper.news-detail-2 .registration-form {
+  max-width: 80%; /* Ограничаване на ширината на формата */
+  margin-top: 20px; /* Отстояние между новината и формата */
+  text-align: center; /* Центриране на съдържанието на формата */
+}
+
+/* Стилове за адаптация към мобилни устройства */
+@media (max-width: 1024px) {
+  .news-detail-wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .news-text {
+    max-width: 80%; /* Увеличаване на ширината за мобилни устройства */
+    margin-right: 0;
+  }
+
+  .registration-form {
+    max-width: 80%; /* Увеличаване на ширината на формата */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* За още по-малки устройства като таблети и мобилни телефони */
+  .news-detail-wrapper {
+    flex-direction: column; /* Пренареждаме колоните */
+    align-items: center;
+  }
+
+  .news-text {
+    max-width: 90%; /* За мобилни устройства, съкращаваме ширината още повече */
+    margin-right: 0;
+  }
+
+  .registration-form {
+    max-width: 90%; /* За мобилни устройства, формата за регистрация също се разширява */
+    margin-top: 20px;
+  }
+
+  .news-text h1 {
+    font-size: 1.5rem; /* Намаляване на размера на заглавието */
+  }
+
+  .news-text p {
+    font-size: 1em; /* Намаляване на размера на текста */
+  }
+}
+
+@media (max-width: 480px) {
+  /* За много малки екрани */
+  .news-detail-wrapper {
+    margin: 50px auto;
+    padding: 0 15px;  /* Намаляване на страничните разстояния */
+  
+  }
+
+  .news-text h1 {
+    font-size: 1.2rem; /* Още по-малък размер на заглавието */
+  }
+
+  .news-text p {
+    font-size: 0.9rem; /* Намаляване на размера на текста */
+  }
+
+  .registration-form {
+    max-width: 100%; /* Формата за регистрация заема цялото пространство */
+    margin-top: 20px;
+  }
+}
+
+

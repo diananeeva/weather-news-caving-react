@@ -1,0 +1,123 @@
+/* Основни стилове */
+.news {
+  margin-top: 50px;
+}
+
+.section {
+  margin-left: 500px; /* Това може да бъде адаптирано */
+  padding: 0px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffe699;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+}
+
+
+.img-stack {
+  position: relative;
+  width: 300px; 
+  height: 250px; 
+  margin: 0 auto;
+}
+
+.stacked-img {
+  width: 100%;
+  height: auto;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+}
+
+/* Индивидуална позиция и ротация на снимките */
+.stacked-img:nth-child(1) {
+  top: 0;
+  transform: rotate(-5deg);
+}
+
+.stacked-img:nth-child(2) {
+  top: 30px; /* Разстояние между снимките */
+  transform: rotate(3deg);
+}
+
+.stacked-img:nth-child(3) {
+  top: 60px;
+  transform: rotate(-2deg);
+}
+
+/* Медиен запитвания за респонсивност */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 18px; /* Намалена големина на шрифта за таблети */
+  }
+
+  .img-stack {
+    width: 250px; /* Намалена ширина на изображенията за таблети */
+    height: 200px; /* Намалена височина на изображенията */
+  }
+  
+  .stacked-img:nth-child(1) {
+    transform: rotate(-3deg); /* Намалена ротация */
+  }
+
+  .stacked-img:nth-child(2) {
+    transform: rotate(2deg); /* Намалена ротация */
+  }
+
+  .stacked-img:nth-child(3) {
+    transform: rotate(-1deg); /* Намалена ротация */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 16px; /* Още по-малка големина на шрифта за мобилни устройства */
+  }
+
+  .img-stack {
+    width: 200px; /* Намалена ширина на изображенията за мобилни устройства */
+    height: 180px; /* Намалена височина на изображенията */
+  }
+
+  .stacked-img:nth-child(1) {
+    transform: rotate(-2deg); /* Намалена ротация */
+  }
+
+  .stacked-img:nth-child(2) {
+    transform: rotate(1deg); /* Намалена ротация */
+  }
+
+  .stacked-img:nth-child(3) {
+    transform: rotate(0deg); /* Ротация за последното изображение */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 14px; 
+  }
+
+  .img-stack {
+    width: 180px; 
+    height: 150px; 
+  }
+
+  .stacked-img:nth-child(1) {
+    transform: rotate(-1deg); 
+  }
+
+  .stacked-img:nth-child(2) {
+    transform: rotate(0deg); 
+  }
+
+  .stacked-img:nth-child(3) {
+    transform: rotate(0deg); 
+  }
+}
+
+  
