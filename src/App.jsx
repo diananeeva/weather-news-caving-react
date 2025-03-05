@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
-import NewsDetail from "./pages/NewsDetail";  // Импортирайте компонента за подробности
+import NewsDetail from "./pages/NewsDetail";  
 import "./styles/App.css";
 import {
   BrowserRouter as Router,
@@ -13,7 +13,7 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/weather-news-caving-react"> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+

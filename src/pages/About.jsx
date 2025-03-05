@@ -11,26 +11,28 @@ const About = () => {
     "newCave.jpg",
     "caveClub.jpg",
   ];
+
   const favoritePlaces = [
     {
       name: "Prohodna Cave",
       description:
-       "Prohodna Cave is one of the most famous caves in Bulgaria. It is located in the Karlukovo region, near the village of Prohodna. The cave is renowned for its two large, circular openings in the ceiling, which resemble eyes, earning it the nickname Eyes of God. These natural formations allow light to flood into the cave, creating a mystical atmosphere inside. Prohodna is a popular spot for spelunkers and tourists, offering both easy access and breathtaking views. It is also known for its rich history, with evidence of human habitation dating back to ancient times. The cave is a must-visit destination for anyone interested in nature, geology, and adventure.",
-      image: "/images/655.jpg",
+        "Prohodna Cave is one of the most famous caves in Bulgaria. It is located in the Karlukovo region, near the village of Prohodna. The cave is renowned for its two large, circular openings in the ceiling, which resemble eyes, earning it the nickname Eyes of God. These natural formations allow light to flood into the cave, creating a mystical atmosphere inside. Prohodna is a popular spot for spelunkers and tourists, offering both easy access and breathtaking views. It is also known for its rich history, with evidence of human habitation dating back to ancient times. The cave is a must-visit destination for anyone interested in nature, geology, and adventure.",
+      image: "/weather-news-caving-react/images/655.jpg", 
     },
     {
       name: "Alpine Meadow - Lakatnik",
       description:
         "Alpine Meadow in Lakatnik is a picturesque area located near the village of Lakatnik, in the Balkan Mountains of Bulgaria. Known for its breathtaking natural beauty, it offers stunning views of the surrounding mountains and valleys. The meadow is a popular spot for hikers, nature enthusiasts, and those who enjoy outdoor activities. With its rich biodiversity and peaceful atmosphere, it provides an excellent location for relaxation, picnics, and exploring the great outdoors. The area is also known for its proximity to the Lakatnik cliffs, which are a favorite among climbers.",
-      image: "/images/alpiyska.jpg",
+      image: "/weather-news-caving-react/images/alpiyska.jpg", 
     },
     {
       name: "Svirchovitsa Cave",
       description:
         "The Cave is a fascinating cave located in Bulgaria, known for its unique formations and natural beauty. Situated near the village of Svirchovitsa, it attracts spelunkers and tourists alike. The cave features impressive stalactites, stalagmites, and other speleological formations that showcase the power of nature. It is also home to a variety of cave-dwelling species, making it an interesting destination for both nature lovers and researchers. Although not as widely known as some other caves in Bulgaria, Svirchovitsa Cave offers a captivating and tranquil experience for those who venture into its depths.",
-      image: "/images/svirchovica.jpg",
+      image: "/weather-news-caving-react/images/svirchovica.jpg", 
     },
   ];
+
   return (
     <div className="about">
       <div className="about-content">
@@ -54,7 +56,10 @@ const About = () => {
       <div className="gallery">
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
-            <img src={`/images/${image}`} alt={`Gallery ${index + 1}`} />
+            <img
+              src={`/weather-news-caving-react/images/${image}`}
+              alt={`Gallery ${index + 1}`}
+            />
           </div>
         ))}
       </div>
@@ -63,7 +68,10 @@ const About = () => {
         <div className="places-grid">
           {favoritePlaces.map((place, index) => (
             <div key={index} className="place-card">
-              <img src={place.image} alt={place.name} />
+              <img
+                src={`/weather-news-caving-react/images/${place.image}`}
+                alt={place.name}
+              />
               <h3>{place.name}</h3>
               <p>{place.description}</p>
             </div>

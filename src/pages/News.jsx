@@ -18,18 +18,18 @@ const News = () => {
             
             <Link to="/news/1">
               <img
-                src="/images/alpiyska.jpg"
+                src="/weather-news-caving-react/images/alpiyska.jpg"
                 alt="Снимка 1"
                 className="stacked-img"
               />
            
             <img
-              src="/images/beauty.jpg"
+              src="/weather-news-caving-react/images/beauty.jpg"
               alt="Снимка 2"
               className="stacked-img"
             />
             <img
-              src="/images/cherven.jpg"
+              src="/weather-news-caving-react/images/cherven.jpg"
               alt="Снимка 3"
               className="stacked-img"
             />
@@ -44,19 +44,19 @@ const News = () => {
             
           <Link to="/news/2">
               <img
-                src="/images/cave1.jpg"
+                src="/weather-news-caving-react/images/cave1.jpg"
                 alt="Снимка 4"
                 className="stacked-img"
               />
             
             <img
-              src="/images/newCave.jpg"
+              src="/weather-news-caving-react/images/newCave.jpg"
               alt="Снимка 5"
               className="stacked-img"
             />
             
             <img
-              src="/images/svirchovica.jpg"
+              src="/weather-news-caving-react/images/svirchovica.jpg"
               alt="Снимка 6"
               className="stacked-img"
             />
