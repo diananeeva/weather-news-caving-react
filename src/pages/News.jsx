@@ -35,10 +35,6 @@ const News = () => {
             />
              </Link>
           </div>
-        </section>
-
-      
-        <section className="section mt-8">
           <h2 className="title">Beginner Caving Training 2024</h2>
           <div className="img-stack">
             
@@ -62,6 +58,7 @@ const News = () => {
             />
             </Link>
           </div>
+          
         </section>
       </main>
     </section>

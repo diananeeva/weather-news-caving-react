@@ -4,8 +4,7 @@
 }
 
 .section {
-  margin-left: 500px; /* Това може да бъде адаптирано */
-  padding: 0px;
+  margin-left: 500px; 
 }
 
 .title {
@@ -34,14 +33,14 @@
   left: 0;
 }
 
-/* Индивидуална позиция и ротация на снимките */
+
 .stacked-img:nth-child(1) {
   top: 0;
   transform: rotate(-5deg);
 }
 
 .stacked-img:nth-child(2) {
-  top: 30px; /* Разстояние между снимките */
+  top: 30px; 
   transform: rotate(3deg);
 }
 
@@ -50,50 +49,58 @@
   transform: rotate(-2deg);
 }
 
-/* Медиен запитвания за респонсивност */
+
 @media (max-width: 1024px) {
   .title {
-    font-size: 18px; /* Намалена големина на шрифта за таблети */
+    font-size: 18px; 
   }
 
   .img-stack {
-    width: 250px; /* Намалена ширина на изображенията за таблети */
-    height: 200px; /* Намалена височина на изображенията */
+    height: 200px; 
+    position: relative;
+    top: 300px;
+    right: 100xp;
+    left: -250px;
   }
   
   .stacked-img:nth-child(1) {
-    transform: rotate(-3deg); /* Намалена ротация */
+    transform: rotate(-3deg); 
   }
 
   .stacked-img:nth-child(2) {
-    transform: rotate(2deg); /* Намалена ротация */
+    transform: rotate(2deg); 
   }
 
   .stacked-img:nth-child(3) {
-    transform: rotate(-1deg); /* Намалена ротация */
+    transform: rotate(-1deg); 
   }
+  .news-detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
 }
 
 @media (max-width: 768px) {
   .title {
-    font-size: 16px; /* Още по-малка големина на шрифта за мобилни устройства */
+    font-size: 16px; 
   }
 
   .img-stack {
-    width: 200px; /* Намалена ширина на изображенията за мобилни устройства */
-    height: 180px; /* Намалена височина на изображенията */
+    width: 200px; 
+    height: 180px; 
   }
 
   .stacked-img:nth-child(1) {
-    transform: rotate(-2deg); /* Намалена ротация */
+    transform: rotate(-2deg); 
   }
 
   .stacked-img:nth-child(2) {
-    transform: rotate(1deg); /* Намалена ротация */
+    transform: rotate(1deg); 
   }
 
   .stacked-img:nth-child(3) {
-    transform: rotate(0deg); /* Ротация за последното изображение */
+    transform: rotate(0deg); 
   }
 }
 

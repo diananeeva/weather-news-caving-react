@@ -12,70 +12,70 @@
   margin-top: 90px;
 }
 
-/* Стилове за wisdom-section */
+
 .wisdom-section {
   margin-top: 80px;
 }
 
 .wisdom-section ul {
-  list-style: none; /* Премахване на маркерите за списък */
-  padding: 0; /* Премахване на вътрешното разстояние на списъка */
+  list-style: none; 
+  padding: 0; 
 }
 
 .wisdom-section ul li {
-  font-size: 1.5em; /* Голям шрифт */
+  font-size: 1.5em;
   font-weight: bold;
-  font-style: italic; /* Курсив */
-  color: #ffffff; /* Ярко бял текст за контраст */
-  padding: 20px; /* Пространство около текста */
-  margin: 20px auto; /* Отстояние между елементите */
-  max-width: 800px; /* Ограничена ширина */
-  background-color: rgba(0, 0, 0, 0.5); /* Тъмен прозрачен фон зад текста */
-  border-left: 5px solid #ff4500; /* Оранжева лента отляво */
-  border-radius: 8px; /* Заоблени краища */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Сянка за дълбочина */
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Леко сияние за четливост */
+  font-style: italic; 
+  color: #ffffff; 
+  padding: 20px; 
+  margin: 20px auto; 
+  max-width: 800px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-left: 5px solid #ff4500; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); 
 }
 
-/* Медиен запитвания за респонсивност */
+
 @media (max-width: 1024px) {
   .home-container h1 {
-    font-size: 2.5em; /* Намалена големина на заглавието за таблети */
-    margin-top: 60px; /* Намалено разстояние отгоре */
+    font-size: 2.5em; 
+    margin-top: 60px; 
   }
 
   .wisdom-section ul li {
-    font-size: 1.3em; /* Намалена големина на шрифта в списъка за таблети */
-    padding: 15px; /* Намалено пространство около текста */
-    margin: 15px auto; /* Намалено разстояние между елементите */
-    max-width: 700px; /* Ограничава ширината на елементите */
+    font-size: 1.3em; 
+    padding: 15px; 
+    margin: 15px auto; 
+    max-width: 700px; 
   }
 }
 
 @media (max-width: 768px) {
   .home-container h1 {
-    font-size: 2em; /* Намалена големина на заглавието за мобилни устройства */
-    margin-top: 40px; /* Намалено разстояние отгоре */
+    font-size: 2em; 
+    margin-top: 40px; 
   }
 
   .wisdom-section ul li {
-    font-size: 1.2em; /* Намалена големина на шрифта за мобилни устройства */
-    padding: 10px; /* Намалено пространство около текста */
-    margin: 10px auto; /* Намалено разстояние между елементите */
-    max-width: 90%; /* Намалена ширина на елементите */
+    font-size: 1.2em; 
+    padding: 10px; 
+    margin: 10px auto; 
+    max-width: 90%;
   }
 }
 
 @media (max-width: 480px) {
   .home-container h1 {
-    font-size: 1.5em; /* Още по-малка големина на заглавието за много малки екрани */
-    margin-top: 20px; /* Още по-малко разстояние отгоре */
+    font-size: 1.5em;
+    margin-top: 20px; 
   }
 
   .wisdom-section ul li {
-    font-size: 1em; /* Още по-малка големина на шрифта */
-    padding: 8px; /* Още по-малко пространство около текста */
-    margin: 8px auto; /* Намалено разстояние между елементите */
+    font-size: 1em; 
+    padding: 8px;
+    margin: 8px auto; 
     max-width: 100%; 
   }
 }

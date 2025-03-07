@@ -68,10 +68,8 @@ const About = () => {
         <div className="places-grid">
           {favoritePlaces.map((place, index) => (
             <div key={index} className="place-card">
-              <img
-                src={`/weather-news-caving-react/images/${place.image}`}
-                alt={place.name}
-              />
+              <img src={place.image} alt={place.name} />
+
               <h3>{place.name}</h3>
               <p>{place.description}</p>
             </div>

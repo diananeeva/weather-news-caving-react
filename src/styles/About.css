@@ -126,8 +126,8 @@
     grid-template-columns: repeat(2, 1fr); 
   }
 
-  .place-card {
-    height: 500px; 
+  .place-card img {
+    height: auto; 
   }
 
   .place-card h3 {
